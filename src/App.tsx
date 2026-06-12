@@ -1,18 +1,18 @@
-import './style.css';
+import "./style.css";
 
 // ============================================================
 // ここを自分の情報に書き換えてください
 // ============================================================
 
 const oshi = {
-  name: 'David Lynch',
-  catchcopy: '夢と悪夢の境界線を歩く映像作家。',
+  name: "Laufey",
+  catchcopy: "クラシックとジャズを、現代の恋心で歌うアーティスト。",
   description:
-    'デイヴィッド・リンチ（1946-2025）はアメリカの映画監督・芸術家。「ブルーベルベット」「マルホランド・ドライブ」「ツイン・ピークス」などで知られ、難解でシュールな映像表現でカルト的な支持を集めた。映画にとどまらず絵画・写真・音楽など多方面で活動し、TM瞑想の普及にも情熱を注いだ。',
+    "Laufey（レイヴェイ）は、アイスランド出身のシンガーソングライター・マルチインストゥルメンタリスト。ジャズ、クラシック、ボサノヴァの要素を取り入れながら、現代的でロマンチックな歌詞を組み合わせた音楽で人気を集めている。「From The Start」や「Bewitched」などで知られ、どこか懐かしく映画のワンシーンのような世界観が魅力。",
   imageUrl:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/David_Lynch_%282011%29.jpg/800px-David_Lynch_%282011%29.jpg',
-  genre: 'Film / Art',
-  since: '1977',
+    "https://upload.wikimedia.org/wikipedia/commons/0/07/Laufey_Lin.jpg",
+  genre: "Jazz Pop / Classical",
+  since: "1999",
 };
 
 type Point = {
@@ -22,16 +22,16 @@ type Point = {
 
 const points: Point[] = [
   {
-    label: '映像',
-    text: '夢の論理で展開する独自のビジュアル言語。説明できないのに忘れられない場面を生み出す。',
+    label: "世界観",
+    text: "恋愛のときめきや切なさを、レトロで上品な雰囲気に落とし込んでいて、ビジュアルやファッションも含めて完成度が高い。",
   },
   {
-    label: '音楽',
-    text: 'アンジェロ・バダラメンティとの長年のコラボレーション。音楽と映像が一体となって不安と美しさを作り出す。',
+    label: "歌声",
+    text: "落ち着いた低めの声と繊細な歌い方が魅力。聴いているだけで映画の中にいるような気分になる。",
   },
   {
-    label: '多才',
-    text: '映画監督にとどまらず画家・写真家・音楽家としても活動。あらゆる表現を通じて内なる世界を外に出し続けた。',
+    label: "音楽",
+    text: "ジャズやクラシックをベースにしながら、今の世代にも届くやわらかく親しみやすい音楽を作っている。",
   },
 ];
 
@@ -42,10 +42,26 @@ type Item = {
 };
 
 const picks: Item[] = [
-  { title: 'イレイザーヘッド', year: '1977', note: 'デビュー作にして既にリンチ・ワールドが全開。' },
-  { title: 'ブルーベルベット', year: '1986', note: '郊外の美しさの裏に潜む暗闇を描く代表作。' },
-  { title: 'マルホランド・ドライブ', year: '2001', note: '夢と現実が交錯するハリウッド・ノワール。カンヌ監督賞受賞。' },
-  { title: 'ツイン・ピークス', year: '1990', note: 'TVドラマの概念を変えた伝説的シリーズ。' },
+  {
+    title: "From the Start",
+    year: "2023",
+    note: "軽やかなリズムと片思いの歌詞が可愛い代表曲。",
+  },
+  {
+    title: "Bewitched",
+    year: "2023",
+    note: "Laufeyらしいロマンチックで幻想的な雰囲気が詰まったアルバム。",
+  },
+  {
+    title: "Let You Break My Heart Again",
+    year: "2021",
+    note: "オーケストラの音色と切ない歌声が印象的な楽曲。",
+  },
+  {
+    title: "Everything I Know About Love",
+    year: "2022",
+    note: "デビューアルバム。恋愛への憧れや不器用さが丁寧に表現されている。",
+  },
 ];
 
 // ============================================================
@@ -62,7 +78,9 @@ function Hero() {
         </div>
       )}
       <div className="hero-content">
-        <p className="hero-genre">{oshi.genre} · since {oshi.since}</p>
+        <p className="hero-genre">
+          {oshi.genre} · since {oshi.since}
+        </p>
         <h1 className="hero-name">{oshi.name}</h1>
         <p className="hero-catchcopy">{oshi.catchcopy}</p>
       </div>
