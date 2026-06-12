@@ -10,7 +10,7 @@ const oshi = {
   description:
     "Laufey（レイヴェイ）は、アイスランド出身のシンガーソングライター・マルチインストゥルメンタリスト。ジャズ、クラシック、ボサノヴァの要素を取り入れながら、現代的でロマンチックな歌詞を組み合わせた音楽で人気を集めている。「From The Start」や「Bewitched」などで知られ、どこか懐かしく映画のワンシーンのような世界観が魅力。",
   imageUrl:
-    "https://upload.wikimedia.org/wikipedia/commons/0/07/Laufey_Lin.jpg",
+    "https://butters.jp/wp-content/uploads/2023/09/Laufey-Press-Photos-Album-Release-5-PC-Gemma-Warren.jpg",
   genre: "Jazz Pop / Classical",
   since: "1999",
 };

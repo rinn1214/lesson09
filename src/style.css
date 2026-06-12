@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+JP:wght@300;400;500;600&display=swap");
 
 :root {
-  --bg: #18110f;
+  --bg: #281c19;
   --bg-deep: #0f0a09;
   --card: #241916;
   --card-light: #2d211d;
@@ -9,7 +9,7 @@
 
   --text-main: #f7eadc;
   --text-soft: #d8c7b8;
-  --text-muted: #a99486;
+  --text-muted: #d8c7b8;
   --text-dark: #6f5a50;
 
   --accent: #c88b72;
@@ -150,10 +150,6 @@ body {
   gap: 24px;
   padding: 24px 0;
   border-bottom: 1px solid var(--border);
-}
-
-.point-item:first-child {
-  border-top: 1px solid var(--border);
 }
 
 .point-label {
