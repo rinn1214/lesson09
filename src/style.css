@@ -38,7 +38,6 @@ body {
   overflow: hidden;
 }
 
-/* うっすら紙っぽい質感 */
 .page::before {
   content: "";
   position: fixed;
@@ -74,7 +73,6 @@ body {
   border: 1px solid rgba(243, 230, 208, 0.24);
   padding: 12px;
   background: rgba(243, 230, 208, 0.04);
-  transform: rotate(1.2deg);
 }
 
 .hero-image {
@@ -161,11 +159,6 @@ body {
 }
 
 /* POINTS */
-.points-list {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid var(--line);
-}
 
 .point-item {
   display: grid;
@@ -204,11 +197,6 @@ body {
   background: rgba(243, 230, 208, 0.045);
   border: 1px solid var(--line);
   padding: 30px 26px;
-}
-
-.pick-card:nth-child(2),
-.pick-card:nth-child(3) {
-  transform: translateY(18px);
 }
 
 .pick-number {
@@ -281,10 +269,5 @@ body {
 
   .picks-grid {
     grid-template-columns: 1fr;
-  }
-
-  .pick-card:nth-child(2),
-  .pick-card:nth-child(3) {
-    transform: none;
   }
 }
